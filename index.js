@@ -80,8 +80,12 @@ for (let i = 0; i < 100; i++) {
   let random = Math.floor(Math.random() * 100);
   randomArray.push(random);
 }
-fs.writeFile("task7.txt", randomArray.toString(), () => {});
-fs.readFile("task7.txt", (err,res) => {
-    let x = res.toString().split(',')
-    console.log(x);
+// fs.writeFile("task7.txt", randomArray.toString(), () => {});
+fs.readFile("task7.txt", (err, res) => {
+  let x = res.toString().split(",");
+  x.forEach((item)=>{
+    if(item>50){
+        console.log(item);
+    }
+  })
 });
