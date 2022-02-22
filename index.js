@@ -46,10 +46,10 @@ const { json } = require("stream/consumers");
 
 // let kidsArray = [
 //   new Kid("ben", 13, false),
-//   new Kid("ben", 10, true),
+//   new Kid("amir", 10, true),
 //   new Kid("shay", 14, false),
-//   new Kid("ben", 11, true),
-//   new Kid("ben", 16, false),
+//   new Kid("eli", 11, true),
+//   new Kid("oshri", 16, false),
 // ];
 //4
 // fs.writeFile("kids.json", JSON.stringify(kidsArray), () => {});
@@ -64,10 +64,14 @@ const { json } = require("stream/consumers");
 // ]
 // fs.writeFile('task5.txt',JSON.stringify(array),()=>{})
 //6
-// fs.readFile("./kids.json", () => {
-//   for (let i = 0; i < kidsArray.length; i++) {
-//     if (kidsArray[i].isInSchool == true) {
-//       console.log(kidsArray[i]);
+// fs.readFile("./kids.json", (err, res) => {
+//   if (err) {
+//     console.log("bad try again");
+//   }
+//   let info = JSON.parse(res);
+//   for (let i = 0; i < info.length; i++) {
+//     if (info[i].isInSchool == true) {
+//       console.log(info[i]);
 //     } else {
 //       console.log("try again");
 //     }
@@ -94,10 +98,16 @@ const { json } = require("stream/consumers");
 // const myEvent9=require('./event9.js')
 // myEvent9.emitEvent9('event9.txt')
 
-//צרו מחלקה של אירועים, צרו פונקציה מאזינה שמקבלת שם קובץ ומידע ואז מדפיסה לקובץ את המידע וקראו לה בבנאי, ייבאו מופע של המחלקה באינדקס והפעילו את האירוע. 
+//צרו מחלקה של אירועים, צרו פונקציה מאזינה שמקבלת שם קובץ ומידע ואז מדפיסה לקובץ את המידע וקראו לה בבנאי, ייבאו מופע של המחלקה באינדקס והפעילו את האירוע.
 //10
 // const event10 = require('./event10')
 // event10.emitEvent10('event10.txt',"hello world")
 //11
 // const event11 = require('./event11');
 // event11.emitEvent11('event11.json',["amir","avi","ermi","eli"])
+
+
+///////////////////////
+
+//16
+ require('./task16.js')
