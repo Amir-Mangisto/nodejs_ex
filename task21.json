@@ -1,0 +1,10 @@
+{
+    "userArray":[
+        {"firstName":"amir","lastName":"mango","mail":"asas@gmail.com","isConnected":true,"age":27},
+        {"firstName":"eli","lastName":"mango","mail":"asas@gmail.com","isConnected":false,"age":27},
+        {"firstName":"shimi","lastName":"mango","mail":"asas@gmail.com","isConnected":true,"age":27},
+        {"firstName":"avi","lastName":"mango","mail":"asas@gmail.com","isConnected":false,"age":27},
+        {"firstName":"oshri","lastName":"mango","mail":"asas@gmail.com","isConnected":true,"age":27},
+        {"firstName":"jacob","lastName":"mango","mail":"asas@gmail.com","isConnected":false,"age":27}
+    ]
+}

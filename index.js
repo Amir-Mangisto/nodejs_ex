@@ -111,3 +111,12 @@ const { json } = require("stream/consumers");
 
 //16
  require('./task16.js')
+
+ //17
+ require('./task17.js')
+
+ //20
+ require('./task20.js')
+
+ //21
+ require('./task21.js')
